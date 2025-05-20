@@ -109,7 +109,7 @@ for (int i = 0; i < dataContext.getDataCount(); i++) {
                     def varName = value.replaceAll(/\{\{|\}\}/, "")
                     if (collectionVariables.containsKey(varName)) {
                         headerValue = collectionVariables[varName]
-                        isVariable = "true"
+                        isVariable = "true" //The user can set this value to "false" to use the header values defined in the Collection Variables instead.
                     } else {
                         headerValue = varName
                         isVariable = "true"

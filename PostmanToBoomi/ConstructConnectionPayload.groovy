@@ -215,9 +215,9 @@ for (int i = 0; i < dataContext.getDataCount(); i++) {
     <bns:encryptedValues/>
     <bns:description/>
     <bns:object>
-        <HttpSettings authenticationType="${authType}" url="${encodeForXml(baseUrl)}">
-            <AuthSettings password="${password}" user="${encodeForXml(user)}"/>
-            <OAuthSettings accessToken="${accessToken}"
+        <HttpSettings authenticationType="${encodeForXml(authType)}" url="${encodeForXml(baseUrl)}">
+            <AuthSettings password="${encodeForXml(password)}" user="${encodeForXml(user)}"/>
+            <OAuthSettings accessToken="${encodeForXml(accessToken)}"
                            accessTokenURL="${encodeForXml(accessTokenURL)}"
                            authorizationURL="${encodeForXml(authorizationURL)}"
                            consumerKey="${encodeForXml(consumerKey)}"
